@@ -30,3 +30,10 @@ class Stack:
         new_top = Node(data, next_node)
         self.top = new_top
 
+
+    def pop(self):
+        """
+        удаляет элемент с вершины и возвращает
+        """
+        pop = self.stack.pop()
+        return pop

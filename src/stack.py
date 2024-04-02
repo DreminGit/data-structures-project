@@ -20,6 +20,12 @@ class Stack:
         self.stack = []
         self.top = None
 
+    def __repr__(self):
+        return f'{self.__class__.__name__}()'
+
+    def __str__(self):
+        return f'стак данных'
+
     def push(self, data) -> None:
         """
         Метод для добавления элемента на вершину стека
@@ -37,3 +43,4 @@ class Stack:
         """
         pop = self.stack.pop()
         return pop
+

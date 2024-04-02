@@ -14,5 +14,12 @@ class TestStack(unittest.TestCase):
         self.stack.push(1)
         self.stack.push(2)
 
+
+    def test_repr(self):
+        stack = Stack()
+        self.assertEqual(str(stack), "Стак данных")
+
+
+
 if __name__ == '__main__':
     unittest.main()
